@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:paddingLeft="6dp"
+        android:id="@+id/nameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Name:"
+        app:layout_constraintBottom_toTopOf="@id/charCodeTextView"
+        />
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:lines="2"
+        android:id="@+id/nameDataTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nameTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="missed name" />
+    <TextView
+        android:id="@+id/charCodeTextView"
+        android:layout_width="0dp"
+        android:paddingLeft="6dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        tools:ignore="MissingConstraints"
+        tools:text="Char code:" />
+    <TextView
+        android:id="@+id/charCodeDataTextView"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/charCodeTextView"
+        app:layout_constraintTop_toBottomOf="@id/nameDataTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="missed char name" />
+
+    <TextView
+        android:id="@+id/nominalTextView"
+        android:layout_width="0dp"
+        android:paddingLeft="6dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charCodeTextView"
+        tools:ignore="MissingConstraints"
+        tools:text="Nominal:" />
+    <TextView
+        android:id="@+id/nominalDataTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nominalTextView"
+        app:layout_constraintTop_toBottomOf="@id/charCodeDataTextView"
+        tools:text="missed nominal" />
+    <TextView
+        android:id="@+id/valueTextView"
+        android:layout_width="0dp"
+        android:paddingLeft="6dp"
+
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nominalTextView"
+        tools:ignore="MissingConstraints"
+        tools:text="Value:" />
+    <TextView
+        android:id="@+id/valueDataTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/valueTextView"
+        app:layout_constraintTop_toBottomOf="@id/nominalDataTextView"
+        tools:text="missed value" />
+    <TextView
+        android:id="@+id/previousValueTextView"
+        android:layout_width="0dp"
+        android:paddingLeft="6dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valueTextView"
+        tools:ignore="MissingConstraints"
+        tools:text="Previous value:" />
+    <TextView
+        android:id="@+id/previousValueDataTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/previousValueTextView"
+        app:layout_constraintTop_toBottomOf="@id/valueDataTextView"
+        tools:text="missed previous value" />
+    <TextView
+        android:id="@+id/numCodeTextView"
+        android:layout_width="0dp"
+        android:paddingLeft="6dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previousValueTextView"
+        tools:ignore="MissingConstraints"
+        tools:text="Num code:" />
+    <TextView
+        android:id="@+id/numCodeDataTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/numCodeTextView"
+        app:layout_constraintTop_toBottomOf="@id/previousValueDataTextView"
+        tools:text="missed num code" />
+    <TextView
+        android:id="@+id/IDTextView"
+        android:paddingLeft="6dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/numCodeTextView"
+        app:layout_constraintBottom_toTopOf="@+id/barrierLine"
+        tools:ignore="MissingConstraints"
+        tools:text="ID:" />
+    <TextView
+        android:id="@+id/IDDAtaTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/IDTextView"
+        app:layout_constraintTop_toBottomOf="@id/numCodeDataTextView"
+        app:layout_constraintBottom_toTopOf="@+id/barrierLine"
+        tools:text="missed ID" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/design_default_color_primary"
+        android:id="@+id/barrierLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
